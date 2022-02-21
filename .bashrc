@@ -135,11 +135,6 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
-# enable local bin
-if [ -d ~/.local/bin ]; then
-    . ~/.local/bin
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -151,11 +146,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# COLOURS! YAAAY!
+# gib color
 export TERM=xterm-256color
 
-# Obviously.
+# duh
 export EDITOR=/usr/bin/vim
 
 # Red name for root
