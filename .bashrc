@@ -23,9 +23,6 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# correct minor spelling errors in cd
-shopt -s cdspell
-
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
 #shopt -s globstar
@@ -104,9 +101,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -118,11 +112,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# force color prompt
-force_color_prompt=yes
-
-# gib color
-export TERM=xterm-256color
-
-# duh
-export EDITOR=/usr/bin/vim
