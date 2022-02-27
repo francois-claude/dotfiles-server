@@ -113,4 +113,5 @@ fi
 export TERM=xterm-256color
 
 # mor vim
+export VISUAL=/bin/vim
 export EDITOR=/bin/vim.basic
